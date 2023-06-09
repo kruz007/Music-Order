@@ -21,6 +21,10 @@ const OrderSummary = () => {
     setSubscription([]);
   };
 
+  let done = ()=>{
+    alert("Payment Successful")
+  }
+
   return (
     <>
       <div className="container">
@@ -50,7 +54,9 @@ const OrderSummary = () => {
             </div>
           </section>
           <section className="section-3">
-            <button>Proceed to Payment</button>
+            <button onClick={done}>
+              Proceed to Payment
+            </button>
             <p onClick={remove}>Cancel Order</p>
           </section>
         </div>
